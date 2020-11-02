@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+	.container {
+		width: 800px;
+		height: 1300px;
+		border: 2px solid #8B0000;
+		margin:auto;
+		position: relative; 
+		top: 100px;
+	}
+	.judul {
+		width: 800px;
+		height: 100px;
+		border: 1px solid #8B0000;
+		padding-left: 20px;
+		padding-top: 20px;
+		box-sizing: border-box;
+	}
+	.judul .judulatas {
+		font-size: 30px;
+		text-shadow: 3px 2px #B22222;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #FFFFFF;
+	}
+	.menu {
+		width: 800px;
+		height: 50px;    
+		border: 1px solid #B22222;
+		padding-top: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+	.menu a{
+		text-decoration: none;
+		color: 	black;
+	}
+	.menu a:hover{
+		background-color: lightskyblue;
+		color:white;
+	}
+	.banner {
+		background-color: #FA8072;
+		width: 800px;
+		height: 250px;
+		background-image: url(banner.jpg);
+		background-size: cover;
+		background-position-y:-150px;
+	}
+	.banner img{
+		width: 100%;
+	}
+	.judulartikel {
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	.konten {
+		width: 800px;
+		height: 400px;
+		padding: 20px 20px 20px 20px;
+		box-sizing: border-box;
+		background-color: #FA8072;
+		overflow: auto;
+	}
+	.konten img {
+		float: left;
+		padding: 20px 20px;
+		width: 22%;
+	}
+	.gallery {
+		border-radius: 10px;
+		background-color: #FFE4E1;
+		margin: 5px 5px 5px 5px;
+		width: 190px;
+		height: 150px;
+		float: left;
+		font-size: 20px;
+		text-align: center;
+	}
+	.thumbnail {
+		border-radius: 5px;
+		width: 170px;
+		height: 60px;
+		margin: 10px auto;
+		background-color: #F08080;
+		font-size: 20px;
+	}
+	.ribbon {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		background-image: url(ribbon.png);
+		left:700px;
+		top:-20px;
+		border: 1px solid blue;
+	}
+	.layarhitam {
+		border-radius: 5px;
+		width: 200px;
+		height: 50px;
+		position: absolute;
+		left:10px;
+		top:30px;
+		background-color: #FFA07A;
+		opacity: 0.5;
+		border: 1px solid #B22222;
+	}
+	.panel_mode {
+		width: 150px;
+		height: 100px;
+		background-color: blueviolet;
+		border-radius: 10px;
+		position: fixed;
+		left:1150px;
+	}
+	.cobaevent1 {
+		width: 100px;
+		height: 100px;
+		background-color:blue;
+	}
+	.cobaevent2 {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+	}
+</style>
+
+
+</head>
+<body>
+
+    <div class="panel_mode">
+	<br>
+	<center>
+        <button type="button" onclick="ubahwarna_dark()">Mode Malam Hari</button>
+        <br>
+        <br>
+        <button type="button" onclick="ubahwarna_light()">Mode Siang Hari</button>
+    </center>
+
+    </div>
+		<div class="container">
+		<div class="layarhitam"></div>
+		<div class="ribbon"></div>
+		<div class="judul">
+		<h1 class="judulatas">My Website</h1>
+	</div>
+
+	<div class="menu">
+		<a href="#">Home</a>
+		<a href="#">Profil</a>
+		<a href="#">Contact</a>
+	</div>
+		<div class="banner">
+		<img src ="ub front.jpg">
+	</div>
+
+	<div class="judulartikel">
+		<h2>Judul Artikel</h2>
+		<p>Ditulis Oleh Rena Putriana</p>
+	</div>
+
+	<div id="konten" class="konten">
+		<img src="UB.png">
+		Pendidikan vokasi merupakan pendidikan tinggi yang ditujukan untuk kepentingan
+		praktis dimulai dari D-I, D-II, D-III, Sarjana Terapan, Magister Terapan dan Doktor
+		Terapan yang berfungsi mengembangkan peserta didik agar memiliki pekerjaan keahlian
+		terapan tertentu melalui program vokasi dalam rangka mencapai tujuan pendidikan nasional.
+		Pendidikan vokasi merupakan pendidikan yang mengarahkan mahasiswa untuk mengembangkan
+		keahlian terapan, beradaptasi pada bidang pekerjaan tertentu dan dapat menciptakan peluang kerja.
+		Pendidikan vokasi menganut sistem terbuka (multi-entry-exit system) dan multimakna
+		(berorientasi pada pembudayaan, pemberdayaan, pembentukan watak, dan kepribadian,
+		serta berbagai kecakapan hidup life skill. Pendidikan vokasi berorientasi pada kecakapan
+		kerja sesuai dengan perkembangan ilmu pengetahuan dan teknologi terapan serta sesuai dengan
+		tuntutan kebutuhan lapangan kerja. Pendidikan vokasi merupakan pendidikan keahlian terapan
+		yang diselenggarakan di perguruan tinggi berbentuk akademi, politeknik, sekolah tinggi, institut
+		dan universitas. Bentuk penyelenggaraan pendidikan vokasi terdiri dari Program Diploma 1, Diploma 2,
+		Diploma 3, dan Diploma 4. Standar nasional pendidikan vokasi dikembangkan berdasarkan standar
+		kompetensi nasional dan/atau internasional. Sebagaimana yang diamanatkan Undang-Undang Nomor
+		20 Tahun 2003 tersebut memberikan wawasan dan keyakinan pendidikan tinggi harus dikembangkan
+		ke arah suatu sistem demi kepentingan nasional, dan hal ini mendorong Ditjen Dikti Depdiknas
+		merumuskan serangkaian kebijakan pengembangan pendidikan tinggi. Untuk itu disusunlah Kerangka
+		Pengembangan Pendidikan Tinggi Jangka Panjang (KPPTJP IV 2003-2010) yang selanjutnya disempurnakan
+		menjadi HELTS (Higher Education Long Term Strategy), di mana isinya berupa suatu rencana strategis
+		pengembangan jangka panjang yang bertujuan menempatkan sistem pendidikan tinggi nasional, dengan
+		segala keterbatasan yang ada pada kedudukan paling baik di masa depan agar mampu menanggapi tantangan
+		yang dihadapi secara efektif. HELTS merumuskan tiga strategi utama pengembangan pendidikan tinggi,
+		yaitu daya saing bangsa (nation’s competitiveness), otonomi dan desentralisasi (autonomy), dan kesehatan
+		organisasi (organizational health).</p>
+	</div>
+
+<br><br>
+
+	<div class="pembungkusgallery">
+		<div class="gallery"> 
+		<div class="thumbnail">
+		<div><a href="#"><br>VOKASI<a></div>
+		</div class="gallery">UNIVERSITAS BRAWIJAYA</div>
+		
+		<div class="gallery">
+		<div class="thumbnail">
+		<div><a href="#"><br>FISIP<a></div>
+		</div class="gallery">UNIVERSITAS BRAWIJAYA</div>
+		
+		<div class="gallery">
+		<div class="thumbnail">
+		<div><a href="#"><br>KEDOKTERAN<a></div>
+		</div class="gallery">UNIVERSITAS BRAWIJAYA</div>
+		
+		<div class="gallery">
+		<div class="thumbnail">
+		<div><a href="#"><br>FILKOM<a></div>
+		</div class="gallery">UNIVERSITAS BRAWIJAYA</div>
+		
+		<div class="gallery">
+		<div class="thumbnail">
+		<div><a href="#"><br>FAPET<a></div>
+		</div class="gallery">UNIVERSITAS BRAWIJAYA</div>
+		
+		<div class="gallery">
+		<div class="thumbnail">
+		<div><a href="#"><br>FIA<a></div>
+		</div class="gallery">UNIVERSITAS BRAWIJAYA</div>
+		
+		<div class="gallery">
+		<div class="thumbnail">
+		<div><a href="#"><br>HUKUM<a></div>
+		</div class="gallery">UNIVERSITAS BRAWIJAYA</div>
+		
+		<div class="gallery">
+		<div class="thumbnail">
+		<div><a href="#"><br>TEKNIK<a></div>
+		</div class="gallery">UNIVERSITAS BRAWIJAYA</div>
+	</div>
+	</div>
+    </div>
+	
+		
+
+	<div id="cobaeventku" class="cobaevent" onmouseup="divkelakuan()" onmousedown="divkelakuan1()"></div>
+
+
+<script>
+
+
+    function ubahwarna_dark(){
+
+       document.getElementById('konten').style.backgroundColor="black";
+       document.getElementById('konten').style.color="white";
+
+
+       }
+
+
+    function ubahwarna_light(){
+
+document.getElementById('konten').style.backgroundColor="yellow";
+document.getElementById('konten').style.color="black";
+
+
+
+}
+
+
+function divkelakuan(){
+
+document.getElementById('cobaeventku').className="cobaevent1";
+
+
+}
+
+function divkelakuan1(){
+
+document.getElementById('cobaeventku').className="cobaevent2";
+
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
